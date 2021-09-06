@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="javaScript.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="title">
+            <img class=ul_logo src="Imag/Sl-logo1.jpg" alt="ul_logo">
+        </div>
+
+        <div class="second_image">
+        </div>
+
+        <div class="station-sök">
+            <input type="text" id="userInput" placeholder="Ange avgångshållplats">
+            <input class="sök-button" type="button" value="sök" onclick=" getSiteId()
+                    //; setInterval('fetchUrl()' , 1000 * 60)
+                    ">
+
+            <div class="radio">
+                <div class="bus-button">
+                    <img src="Imag/busSymbol.jpg" alt="">
+                    <label for="bus" class="custom-radio-btn">
+                        <input name="typeOfTransport" id="bus" type="radio">
+                    </label>
+                </div>
+                <div class="tåg-buttonbutton">
+                    <img src="Imag/Train.jpg" alt="">
+                    <label class="custom-radio-btn">
+                        <input name="typeOfTransport" id="train" type="radio">
+
+                    </label>
+                </div>
+                <div class="tunnelbanna-button">
+                    <img src="Imag/tunnelbanna.jpg" alt="">
+                    <label class="custom-radio-btn">
+                        <input name="typeOfTransport" id="metro" type="radio">
+
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id='main'>
+        <input type="text" id="stationName">
+
+        <div id='bussTider'>
+
+            <table id="timeTable">
+
+
+
+            </table>
+
+
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>
