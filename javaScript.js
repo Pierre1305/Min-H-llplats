@@ -25,7 +25,7 @@ function getSiteId() {
 
   console.log(theInput);
 
-  const url3 = `http://api.sl.se/api2/typeahead.json?key=d958823023f445c3be6bc7be2d24e45b&searchstring=${theInput}&stationsonly=true`;
+  const url3 = ` https://cors-anywhere.herokuapp.com/http://api.sl.se/api2/typeahead.json?key=d958823023f445c3be6bc7be2d24e45b&searchstring=${theInput}&stationsonly=true`;
 
   fetch(url3)
     .then((resp) => resp.json())
@@ -46,7 +46,7 @@ function getSiteId() {
 //Tabel updateras per minut
 setInterval(getSiteId, 60000);
 function useSiteID(siteID) {
-  const url2 = `http://api.sl.se/api2/realtimedeparturesv4.json?key=d9acceb0d7eb47528927be997fe327be&siteid=${siteID}&timewindow=15`;
+  const url2 = ` https://cors-anywhere.herokuapp.com/http://api.sl.se/api2/realtimedeparturesv4.json?key=d9acceb0d7eb47528927be997fe327be&siteid=${siteID}&timewindow=15`;
 
   let emptyTable = document.getElementById("departureTable");
   emptyTable.innerHTML = "";
